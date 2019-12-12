@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<title>GROUP 7- Segrewarriors 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: Courier}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://media2.giphy.com/media/ITmFr8untvHZm/giphy.gif');
+  min-height: 100%;
+}
+
+/* Second image (Solution Summary) */
+.bgimg-2 {
+  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/2019-09-04T234711Z_1629003380_-770x433.png?C684mB2uMlFidF1._9M1rd6Y73MqDL.u");
+  min-height: 400px;
+}
+
+/* Third image (Solution) */
+.bgimg-3 {
+  background-image: url("https://ichef.bbci.co.uk/news/624/cpsprodpb/8DDE/production/_106581363_gettyimages-647347451.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#solutionsummary" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOLUTION SUMMARY</a>
+    <a href="#problem" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROBLEM</a>
+    <a href="#solution" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> SOLUTION</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#solutionsummary" class="w3-bar-item w3-button" onclick="toggleFunction()">SOLUTION SUMMARY</a>
+    <a href="#problem" class="w3-bar-item w3-button" onclick="toggleFunction()">PROBLEM</a>
+    <a href="#solution" class="w3-bar-item w3-button" onclick="toggleFunction()">SOLUTION</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>DEFORESTATION</span>
+    
+    
+  </div>
+</div>
+
+<!-- Container (Solution Summary Section) -->
+<div class="w3-content w3-container w3-padding-64" id="solutionsummary">
+  <h3 class="w3-center">Solution Summary</h3>
+  <p class="w3-center"><em>The Philippines is one of the most severely deforested countries in the tropics and most deforestation has happened in the last 40 years. Estimates place forest cover in the Philippines in the year 1900 at 21 million hectares, covering 70 % of the total land area.</em></p>
+  <p> Our solution is campaign. We chose campaign to interact easily with our target participants. Our solution contains the definition and some causes and effects of deforestation. We will also explain the other contents of our campaign for them to understand it. We think that it will be effective because we will be able to explain clearly our problem to them. </p>
+  
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Campaign</b></p><br>
+      <iframe width="450" height="315" src="https://i.gifer.com/2yXJ.gif" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to our website. The reasons why we come up with this kind of solution is to spread awareness about deforestation, to give informations about deforestation and to help our participants to understand more about deforestation. We also chose this type of solution so we can explain our topic clearly. We believed that if we explain it to our target participants,they may apply it to their daily lives. They may also share the things we explained to them to other people. </p>
+    </div>
+  </div>
+ 
+<!-- Second Parallax Image with Problem Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>5 out of 30 students from Grade 9AM-2 of APEC Schools doesn't know that deforestation is illegal.</span>
+  </div>
+</div>
+
+<!-- Container (Problem Section) -->
+<div class="w3-content w3-container w3-padding-64" id="problem">
+  <h3 class="w3-center">Background of the Study</h3>
+
+  <p class="w3-large w3-center w3-padding-16">According to Stuart L. Pimm, he said that deforestation is the clearing or thinning of forests by humans<br></p>
+  <p class="w3-large w3-center w3-padding-16">"Deforestation is the permanent removal of trees to make room for something besides forest." As stated by Sarah Derouin. <br></p>
+  
+  
+  <p class="w3-large w3-center w3-padding-16">In accordance with Wikipedia, deforestation is the conversion of forested areas to non-forest land use such as arable land, urban use, logged area of wasteland.</p>
+  
+  <p class="w3-wide"><i class="fa fa-camera"></i>Dam Construction</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Mining</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Overusage of papers.</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="https://3.bp.blogspot.com/-2LwKKDrmNL0/VNcsW07en1I/AAAAAAAACLc/nhOAjJtINbI/s1600/deforestation.jpg">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Problem Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+         <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>CAMPAIGN</span>
+  </div>
+</div>
+
+<!-- Container (Solution Section) -->
+<div class="w3-content w3-container w3-padding-64" id="solution">
+  <h3 class="w3-center">How does the solution work?</h3>
+  <p class="w3-center"><em>We will first introduce our topic to our target participants. After that, we will tell them our problem and we will also explain why we chose that problem. For our opening remarks, we will give them idea about our topic and after that, we will now discuss our topic and after that, we will discuss some effects of deforestation and we will also explain it to them. Then last one is our closing remarks wherein we're going to ask them questions about the things they've learned and we will give him/her a small price if he/she will answer the question correctly.</em></p>
+  
+  <h3 class="w3-center">FEATURES</h3>
+  <p class="w3-center"><em>We have a very aesthetic slides which can attract our participants and we're sure that they will listen to us. We used aesthetic background from Google and we make sure that our fonts are suitable and readable.</em></p>
+  
+  <h3 class="w3-center">BENEFITS</h3>
+  <p class="w3-center"><em>If we're going to use campaign as our solution to our problem, we can explain our topic to them clearly as we state short explanation on each slide. We are sure that our participants can understand our topic and our point about our problem clearly.</em></p>
+  
+  <h3 class="w3-center">EARLY PROTOTYPE</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="1.1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="2.2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="3.3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose3 closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="4.4.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose4">
+    </div>
+  </div>
+
+    <div class="w3-col m3">
+      <img src="5.5.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose4">
+    </div>
+  </div>
+
+  <h3 class="w3-center">USABILITY TEST</h3>
+  <p class="w3-center"><em>A. Pre- testing</em></p>
+  <p class="w3-center"><em>1. What do you know about deforestation?</em></p>
+  <p class="w3-center"><em>2. Are you aware of the causes of deforestation?</em></p>
+  <p class="w3-center"><em>3. Are you aware of the effects of doforestation?</em></p>
+  <p class="w3-center"><em>4. What are your possible solutions of deforestation?</em></p>
+  <p class="w3-center"><em>5. As a student, how can you prevent deforestation?</em></p>
+ 
+  <p class="w3-center"><em>B. Testing</em></p>
+  <p class="w3-center"><em>1. Do you think that our campaign will help our target participants to learn more about deforestation?</em></p>
+  <p class="w3-center"><em>2. Which part of our campaign seems to be interesting?</em></p>
+  <p class="w3-center"><em>3. Which part of our campaign needs an improvement?</em></p>
+  <p class="w3-center"><em>4. Did you clearly understand the message of our presentation?</em></p>
+  <p class="w3-center"><em>5. Did we achieved your expectations in our campaign?</em></p>
+  
+  <p class="w3-center"><em>C. Post- testing</em></p>
+  <p class="w3-center"><em>1. What are your feedbacks on our campaign?</em></p>
+  <p class="w3-center"><em>2. Did our presentation convinced you to prevent the risks of deforestation?</em></p>
+  <p class="w3-center"><em>3. What can you say to the overall appearance of the webpage?</em></p>
+  <p class="w3-center"><em>4. What can you suggest to make our presentation better?</em></p>
+  <p class="w3-center"><em>5. Did we achieved your expectations in our mini-seminar?</em></p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="w3-center">USABILITY TEST RESULT</h3>
+  <p class="w3-center"><em>For the pre-testing part, question 1, most of them said that deforestation is about cutting trees illegaly. For question 2, 4 out of 5 members of the group said that they're not aware of the causes of deforestation. While 1 out of 5 members of the group said that he/she is aware of the causes of deforestation.For question 3,5 out of 5 members of the group said that they are aware of the effects of deforestation. For question 4, most of the members of the group said that the possible solution of deforestation is to stop cutting trees, some of them said that the possible solution is to make a commercial about the the problem which is deforestation. For question 5, all of the members of the group said taking care of the trees can be a possible solution to prevent deforestation.</em></p>
+  
+  <p class="w3-center"><em>For the Testing part, question 1, 5 out of 5 members of the group said that our campaign will help our target participants to learn more about deforestation. For question 2, most of our target participants said that the most interesting part of our campaign is our opening remarks. For question 3, 5/5 of our target participants said that the closing remarks of our campaign needs more improvement. </em></p>
+ 
+ <p class="w3-center"><em>For the Post Testing part,most of our target participants said that they liked the designs in our slides. for question 2, all of our target participants got convinced to prevent the risks of deforestation. For question 3, most of our target participants said that the overall appearance of our webpage is good. For question 4,most of them said that we must have more energy to make our presentation better. For question 5, some of them said that in every donations, we should plant a tree. </em></p>
+ 
+  <h3 class="w3-center">LATEST PROTOTYPE</h3>
+  
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose1">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose2">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="4.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="rose">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="5.JPG" class="w3-image w3-round" style="width:100%">
+    </div>
+    
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="6.JPG" class="w3-image w3-round" style="width:100%">
+    </div>
+    
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="7.JPG" class="w3-image w3-round" style="width:100%">
+    </div>
+    
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> APEC Schools- Roxas Blvd. Pasay City, Philippines<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0933-868-5817 <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ap.frances.garcia@apecschools.edu.ph<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-orange w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="file:///home/chronos/u-9482c08155ea6e8a49e7a78a0e67c5c9fe4e9e20/MyFiles/Downloads/rose.html" title="Group 7- Segrewarriors" target="_blank" class="w3-hover-text-green">GROUP 7- Segrewarriors 2.0</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</html>
